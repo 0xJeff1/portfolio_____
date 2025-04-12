@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0x_Jeff | software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="public/favicon.ico?v=2" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="try-button">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="divider"></div>
+
+        <header class="hero">
+            <h1 class="name">0x_Jeff</h1>
+            <img src="public/avatar.png" alt="Profile Picture" class="avatar">
+        </header>
+
+        <div class="divider"></div>
+
+        <section class="bio">
+            <h2>Hi, my name is abdallah jeftani. 👨‍💻|🎧🧘🎾🏋️‍♂️|🍵</h2>
+            <p>A software Developer student at <a href="https://www.1337.ma" target="_blank" class="school-link">1337</a>  🧑‍🎓</p>
+        </section>
+
+    </div>
+
+    <!-- Tech Flower -->
+    <div class="tech-flower-container">
+        <div class="tech-flower-button" id="techFlowerBtn">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="tech-petals" id="techPetals">
+            <div class="tech-petal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                <div class="tech-tooltip">C</div>
+            </div>
+            <div class="tech-petal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <div class="tech-tooltip">JavaScript</div>
+            </div>
+            <div class="tech-petal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                <div class="tech-tooltip">Django</div>
+            </div>
+            <div class="tech-petal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                <div class="tech-tooltip">React</div>
+            </div>
+            <div class="tech-petal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                <div class="tech-tooltip">C++</div>
+            </div>
+            <div class="tech-petal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                <div class="tech-tooltip">Docker</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Immediately execute to ensure the flower button works
+        (function() {
+            // Get elements
+            const techFlowerBtn = document.getElementById('techFlowerBtn');
+            const techPetals = document.getElementById('techPetals');
+            
+            if (!techFlowerBtn || !techPetals) {
+                console.error('Tech flower elements not found!');
+                return;
+            }
+            
+            console.log('Tech flower elements found', techFlowerBtn, techPetals);
+            
+            const petals = document.querySelectorAll('.tech-petal');
+            let isOpen = false;
+            
+            // Set explicit click handler
+            techFlowerBtn.onclick = function(event) {
+                console.log('Tech flower button clicked');
+                event.stopPropagation(); // Prevent event bubbling
+                
+                if (!isOpen) {
+                    // Open flower
+                    techPetals.classList.add('visible');
+                    
+                    // Animate petals with delay
+                    petals.forEach((petal, index) => {
+                        setTimeout(() => {
+                            petal.classList.add('animate');
+                        }, index * 70);
+                    });
+                    
+                    isOpen = true;
+                    console.log('Flower opened');
+                } else {
+                    // Close flower
+                    techPetals.classList.remove('visible');
+                    
+                    petals.forEach(petal => {
+                        petal.classList.remove('animate');
+                    });
+                    
+                    isOpen = false;
+                    console.log('Flower closed');
+                }
+            };
+            
+            // Close flower when clicking outside
+            document.addEventListener('click', function(event) {
+                if (isOpen && !techPetals.contains(event.target) && event.target !== techFlowerBtn) {
+                    console.log('Clicked outside, closing flower');
+                    techPetals.classList.remove('visible');
+                    
+                    petals.forEach(petal => {
+                        petal.classList.remove('animate');
+                    });
+                    
+                    isOpen = false;
+                }
+            });
+            
+            console.log('Tech flower initialization complete');
+        })();
+    </script>
+</body>
+</html> 
