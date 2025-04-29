@@ -84,19 +84,25 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="carpool">
                     <div class="project-header">
-                        <h3>ft_irc</h3>
-                        <a href="https://github.com/Toowan0x1/ft_irc" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <h3>Carpool App</h3>
+                        <a href="https://github.com/0xJeff1/carpool" class="github-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
-                    <p>Implemented an Internet Relay Chat (IRC) server from scratch in C++. This project involved socket programming, network protocols, and concurrent programming to create a functioning IRC server that adheres to RFC standards.</p>
+                    <div class="construction-badge">Under Construction</div>
+                    <p>A collaborative ride-sharing platform that connects drivers with passengers for daily commutes, long trips, or regular travel routes. Features real-time tracking, payment integration, and a rating system.</p>
+                    <div class="preview-link">
+                        <a href="https://carpool-liart-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i> Live Preview
+                        </a>
+                    </div>
                     <div class="project-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">Sockets</span>
-                        <span class="tag">Network Programming</span>
-                        <span class="tag">Concurrency</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Express</span>
                     </div>
                 </div>
                   
@@ -278,6 +284,21 @@
                         "User authentication and operator privileges"
                     ],
                     challenges: "Handling multiple client connections simultaneously required careful implementation of non-blocking I/O and proper state management. Ensuring thread safety and preventing race conditions while maintaining performance was another significant challenge."
+                },
+                carpool: {
+                    title: "Carpool App",
+                    github: "https://github.com/0xJeff1/carpool-app",
+                    description: "A collaborative ride-sharing platform that connects drivers with passengers for daily commutes, long trips, or regular travel routes. Features real-time tracking, payment integration, and a rating system.",
+                    tags: ["React", "Node.js", "MongoDB", "Express", "Google Maps API"],
+                    features: [
+                        "User profiles for drivers and passengers",
+                        "Route planning and matching algorithm",
+                        "Real-time location tracking",
+                        "In-app messaging system",
+                        "Payment processing integration",
+                        "Rating and review system"
+                    ],
+                    challenges: "The main challenge is creating an efficient matching algorithm that pairs drivers and passengers based on routes, preferences, and schedules. Implementing real-time location tracking while preserving battery life and ensuring data privacy is another significant challenge."
                 }
             };
 
@@ -294,7 +315,7 @@
             // Add data-project attributes to project cards
             document.querySelectorAll('.project-card').forEach((card, index) => {
                 if (!card.getAttribute('data-project')) {
-                    const projects = ['transcendance', 'inception', 'irc'];
+                    const projects = ['transcendance', 'inception', 'irc', 'carpool'];
                     if (index < projects.length) {
                         card.setAttribute('data-project', projects[index]);
                     }

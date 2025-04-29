@@ -14,6 +14,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--color-background);
     background-image: radial-gradient(circle at top left, rgba(50, 50, 50, 0.2), transparent 80%);
@@ -21,7 +26,7 @@ body {
     font-family: var(--font-sans);
     line-height: 1.6;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body::before {
@@ -60,8 +65,10 @@ body::before {
 
 .container {
     max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     padding: 0 1rem;
+    overflow: hidden;
 }
 
 /* Navigation */
@@ -118,7 +125,7 @@ body::before {
 }
 
 .name {
-    font-size: 6rem;
+    font-size: clamp(3rem, 5vw, 6rem);
     font-weight: 700;
     text-align: center;
     cursor: default;
@@ -149,7 +156,7 @@ body::before {
 }
 
 .page-header h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
@@ -159,10 +166,12 @@ body::before {
 /* Bio Section */
 .bio {
     text-align: center;
-    max-width: 800px;
+    max-width: min(800px, 90%);
     margin: 0 auto;
     padding: 2rem 0;
     animation: fadeIn 1.5s ease-in;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .bio h2 {
@@ -254,7 +263,8 @@ body::before {
 
 /* Projects Section */
 .projects {
-    padding: 4rem 0;
+    padding: 2rem 0;
+    animation: fadeIn 2s ease-in;
 }
 
 .projects h2 {
@@ -275,6 +285,7 @@ body::before {
     padding: 1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    position: relative;
 }
 
 .project-card:hover {
@@ -330,6 +341,59 @@ body::before {
 
 .github-link:hover i {
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+}
+
+/* Construction Badge */
+.construction-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 165, 0, 0.8);
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transform: rotate(5deg);
+    z-index: 2;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(5deg) scale(1);
+    }
+    50% {
+        transform: rotate(5deg) scale(1.05);
+    }
+    100% {
+        transform: rotate(5deg) scale(1);
+    }
+}
+
+/* Preview Link */
+.preview-link {
+    margin: 1rem 0;
+}
+
+.preview-link a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    gap: 0.5rem;
+}
+
+.preview-link a:hover {
+    color: #4f8ef7;
+    text-decoration: underline;
+}
+
+.preview-link i {
+    font-size: 0.8rem;
 }
 
 /* Contact Section */
@@ -552,6 +616,191 @@ footer {
     }
 }
 
+/* Large screen adaptations */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .bio {
+        max-width: 900px;
+    }
+    
+    .bio h2 {
+        font-size: 1.5rem;
+    }
+    
+    .bio p {
+        font-size: 1.2rem;
+    }
+    
+    .navigation {
+        padding: 5rem 0 3rem;
+    }
+    
+    .navigation a {
+        font-size: 1.3rem;
+    }
+    
+    .divider {
+        margin: 3rem 0;
+    }
+    
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .try-button {
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .tech-flower-container {
+        right: 40px;
+        bottom: 40px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tech-flower-button {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tech-flower-button i {
+        font-size: 28px;
+    }
+    
+    .tech-petals {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .tech-petal {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .tech-petal img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* Adjust petal positions for larger flower */
+    .tech-petal:nth-child(1) {
+        top: 0;
+        left: calc(50% - 45px);
+    }
+    
+    .tech-petal:nth-child(2) {
+        top: 38px;
+        left: 38px;
+    }
+    
+    .tech-petal:nth-child(3) {
+        top: 130px;
+        left: 0;
+    }
+    
+    .tech-petal:nth-child(4) {
+        top: 222px;
+        left: 38px;
+    }
+    
+    .tech-petal:nth-child(5) {
+        top: 260px;
+        left: calc(50% - 45px);
+    }
+    
+    .tech-petal:nth-child(6) {
+        top: 222px;
+        left: calc(100% - 128px);
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .navigation {
+        padding: 6rem 0 4rem;
+    }
+    
+    .bio {
+        max-width: 1000px;
+    }
+    
+    .bio h2 {
+        font-size: 1.7rem;
+    }
+    
+    .bio p {
+        font-size: 1.3rem;
+    }
+    
+    .tech-flower-container {
+        right: 60px;
+        bottom: 60px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .tech-flower-button {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .tech-flower-button i {
+        font-size: 32px;
+    }
+    
+    .tech-petals {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .tech-petal {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .tech-petal img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Adjust petal positions for even larger flower */
+    .tech-petal:nth-child(1) {
+        top: 0;
+        left: calc(50% - 50px);
+    }
+    
+    .tech-petal:nth-child(2) {
+        top: 43px;
+        left: 43px;
+    }
+    
+    .tech-petal:nth-child(3) {
+        top: 150px;
+        left: 0;
+    }
+    
+    .tech-petal:nth-child(4) {
+        top: 257px;
+        left: 43px;
+    }
+    
+    .tech-petal:nth-child(5) {
+        top: 300px;
+        left: calc(50% - 50px);
+    }
+    
+    .tech-petal:nth-child(6) {
+        top: 257px;
+        left: calc(100% - 143px);
+    }
+}
+
 /* Tech Flower Button */
 .tech-flower-container {
     position: fixed;
@@ -559,6 +808,9 @@ footer {
     bottom: 20px;
     z-index: 999;
     pointer-events: auto;
+    width: 60px;
+    height: 60px;
+    overflow: visible;
 }
 
 .tech-flower-button {
@@ -601,6 +853,7 @@ footer {
     transform-origin: bottom right;
     z-index: 999;
     pointer-events: none;
+    overflow: visible;
 }
 
 .tech-petals.visible {
