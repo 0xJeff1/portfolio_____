@@ -105,6 +105,34 @@
                         <span class="tag">Express</span>
                     </div>
                 </div>
+
+                <div class="project-card" data-project="carpool">
+                    <div class="project-header">
+                        <h3>LessonLedger App</h3>
+                        <!-- <a href="https://github.com/0xJeff1/carpool" class="github-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a> -->
+                    </div>
+                    <div class="construction-badge">Under Construction</div>
+                    <p>This SaaS app helps freelance teachers manage their classes, reminders, and teaching packages all in one place. It simplifies scheduling, tracks upcoming lessons and deadlines with reminders, and organizes different service packages for students. The user-friendly and responsive interface ensures teachers can stay organized and focused, making their teaching business run smoothly.</p>
+                    <div class="preview-link">
+                        <a href="https://0xjeff1.github.io/Tracking_App/" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i> Live Preview
+                        </a>
+                    </div>
+                    <div class="project-tags">
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                          </div>
+                    </div>
+                </div>
                   
             </div>
         </section>
@@ -300,6 +328,24 @@
                     ],
                     challenges: "The main challenge is creating an efficient matching algorithm that pairs drivers and passengers based on routes, preferences, and schedules. Implementing real-time location tracking while preserving battery life and ensuring data privacy is another significant challenge."
                 }
+
+                LedgerApp: {
+                    title: "LessonLedger App",
+                    // github: "https://github.com/0xJeff1/carpool-app",
+                    description: "A SaaS platform designed for freelance teachers to manage their classes, reminders, and teaching packages seamlessly. It helps organize schedules, track student progress, and automate routine administrative tasks.",
+                tags: ["React", "Node.js", "MongoDB", "Express", "Next.js"],
+                features: [
+                "Class scheduling and calendar management",
+                "Automated reminders for upcoming lessons and deadlines",
+                "Package management to offer various teaching plans",
+                "Student progress tracking and notes",
+                "Simple, responsive user interface for easy access on any device",
+                "Secure user authentication and data privacy"
+                ],
+                challenges: "Building an intuitive scheduling system that adapts to diverse teaching styles and package types was a core challenge. Ensuring reminders are timely without being intrusive, while maintaining a smooth user experience across devices, required careful design. Additionally, managing real-time updates and data consistency for students’ progress added complexity."
+
+                }
+
             };
 
             // Get modal elements
@@ -315,7 +361,7 @@
             // Add data-project attributes to project cards
             document.querySelectorAll('.project-card').forEach((card, index) => {
                 if (!card.getAttribute('data-project')) {
-                    const projects = ['transcendance', 'inception', 'irc', 'carpool'];
+                    const projects = ['transcendance', 'inception', 'irc', 'carpool' , 'LedgerApp'];
                     if (index < projects.length) {
                         card.setAttribute('data-project', projects[index]);
                     }
