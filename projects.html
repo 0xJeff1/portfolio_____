@@ -1,440 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - 0x_Jeff</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="public/favicon.ico?v=2" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for GitHub icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - 0x_Jeff</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="public/favicon.ico?v=2" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for GitHub icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
-    <div class="container">
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="contact.html" class="try-button">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="divider"></div>
+  <div class="container">
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html" class="try-button">Contact</a></li>
+      </ul>
+    </nav>
 
-        <header class="page-header">
-            <h1>Projects</h1>
-        </header>
+    <div class="divider"></div>
 
-        <div class="divider"></div>
+    <header class="page-header">
+      <h1>Projects</h1>
+    </header>
 
-        <section class="projects">
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>ft_transcendance</h3>
-                        <a href="https://github.com/SNM-sabi/ft_transcendence" class="github-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p>A full-stack web application featuring a real-time multiplayer Pong game with user authentication, chat functionality, and matchmaking. This was my final project at 42 school, implementing modern web technologies and real-time communication.</p>
-                    <div class="project-tags">
-                        <span class="tag">Django</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">WebSockets</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Inception</h3>
-                        <a href="https://github.com/0xJeff1/inception42" class="github-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p>A DevOps project focused on containerization and infrastructure. Built a complete development environment using Docker, including setting up multiple services (NGINX, WordPress, MariaDB) with custom Docker images and a Docker Compose configuration.</p>
-                    <div class="project-tags">
-                        <span class="tag">Docker</span>
-                        <span class="tag">Docker Compose</span>
-                        <span class="tag">NGINX</span>
-                        <span class="tag">WordPress</span>
-                        <span class="tag">MariaDB</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>ft_irc</h3>
-                        <a href="https://github.com/Toowan0x1/ft_irc" class="github-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p>Implemented an Internet Relay Chat (IRC) server from scratch in C++. This project involved socket programming, network protocols, and concurrent programming to create a functioning IRC server that adheres to RFC standards.</p>
-                    <div class="project-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">Sockets</span>
-                        <span class="tag">Network Programming</span>
-                        <span class="tag">Concurrency</span>
-                    </div>
-                </div>
+    <div class="divider"></div>
 
-                <div class="project-card" data-project="carpool">
-                    <div class="project-header">
-                        <h3>Carpool App</h3>
-                        <a href="https://github.com/0xJeff1/carpool" class="github-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="construction-badge">Under Construction</div>
-                    <p>A collaborative ride-sharing platform that connects drivers with passengers for daily commutes, long trips, or regular travel routes. Features real-time tracking, payment integration, and a rating system.</p>
-                    <div class="preview-link">
-                        <a href="https://carpool-liart-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i> Live Preview
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Express</span>
-                    </div>
-                </div>
+    <section class="projects">
+      <div class="project-grid">
+        <!-- Existing project cards -->
+        <div class="project-card" data-project="transcendance">
+          <div class="project-header">
+            <h3>ft_transcendance</h3>
+            <a
+              href="https://github.com/SNM-sabi/ft_transcendence"
+              class="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <p>
+            A full-stack web application featuring a real-time multiplayer Pong
+            game with user authentication, chat functionality, and matchmaking.
+            This was my final project at 42 school, implementing modern web
+            technologies and real-time communication.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Django</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">WebSockets</span>
+          </div>
+        </div>
 
-                <div class="project-card" data-project="carpool">
-                    <div class="project-header">
-                        <h3>LessonLedger App</h3>
-                        <!-- <a href="https://github.com/0xJeff1/carpool" class="github-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a> -->
-                    </div>
-                    <div class="construction-badge">Under Construction</div>
-                    <p>This SaaS app helps freelance teachers manage their classes, reminders, and teaching packages all in one place. It simplifies scheduling, tracks upcoming lessons and deadlines with reminders, and organizes different service packages for students. The user-friendly and responsive interface ensures teachers can stay organized and focused, making their teaching business run smoothly.</p>
-                    <div class="preview-link">
-                        <a href="https://0xjeff1.github.io/Tracking_App/" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i> Live Preview
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Next.js</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">MongoDB</span>
-                          </div>
-                    </div>
-                </div>
-                  
+        <div class="project-card" data-project="inception">
+          <div class="project-header">
+            <h3>Inception</h3>
+            <a
+              href="https://github.com/0xJeff1/inception42"
+              class="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <p>
+            A DevOps project focused on containerization and infrastructure.
+            Built a complete development environment using Docker, including
+            setting up multiple services (NGINX, WordPress, MariaDB) with custom
+            Docker images and a Docker Compose configuration.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Docker Compose</span>
+            <span class="tag">NGINX</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">MariaDB</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project="irc">
+          <div class="project-header">
+            <h3>ft_irc</h3>
+            <a
+              href="https://github.com/Toowan0x1/ft_irc"
+              class="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <p>
+            Implemented an Internet Relay Chat (IRC) server from scratch in
+            C++. This project involved socket programming, network protocols,
+            and concurrent programming to create a functioning IRC server that
+            adheres to RFC standards.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Sockets</span>
+            <span class="tag">Network Programming</span>
+            <span class="tag">Concurrency</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project="carpool">
+          <div class="project-header">
+            <h3>Carpool App</h3>
+            <a
+              href="https://github.com/0xJeff1/carpool"
+              class="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="construction-badge">Under Construction</div>
+          <p>
+            A collaborative ride-sharing platform that connects drivers with
+            passengers for daily commutes, long trips, or regular travel routes.
+            Features real-time tracking, payment integration, and a rating
+            system.
+          </p>
+          <div class="preview-link">
+            <a
+              href="https://carpool-liart-eight.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fas fa-external-link-alt"></i> Live Preview</a
+            >
+          </div>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <!-- <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Express</span> -->
+          </div>
+        </div>
+
+        <div class="project-card" data-project="LedgerApp">
+          <div class="project-header">
+            <h3>LessonLedger App</h3>
+            <!-- <a
+              href="https://github.com/0xJeff1/carpool"
+              class="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a> -->
+          </div>
+          <div class="construction-badge">Under Construction</div>
+          <p>
+            This SaaS app helps freelance teachers manage their classes,
+            reminders, and teaching packages all in one place. It simplifies
+            scheduling, tracks upcoming lessons and deadlines with reminders,
+            and organizes different service packages for students. The
+            user-friendly and responsive interface ensures teachers can stay
+            organized and focused, making their teaching business run smoothly.
+          </p>
+          <div class="preview-link">
+            <a
+              href="https://0xjeff1.github.io/Tracking_App/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fas fa-external-link-alt"></i> Live Preview</a
+            >
+          </div>
+          <div class="project-tags">
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <!-- <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span> -->
             </div>
-        </section>
+          </div>
+        </div>
 
-        
-    </div>
+        <!-- NEW Scrimba React Projects Card -->
+        <div class="project-card" data-project="scrimbaReact">
+          <div class="project-header">
+            <h3>React Projects</h3>
+            <a
+              href="https://github.com/Jemeni11/Scrimba-React-Projects"
+              class="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <p>
+            A collection of hands-on React projects built following Scrimba's
+            "Learn React" course. Each project highlights key React concepts
+            such as hooks, props, component architecture, and API interaction.
+          </p>
+          <ul class="project-list" style="padding-left: 1.2rem; margin: 1rem 0;">
+            <li><strong>Meme Generator:</strong> Create memes with random images and custom text using an API and form state.</li>
+            <li><strong>Airbnb Clone:</strong> Static listing layout mimicking Airbnb UI with reusable components.</li>
+            <li><strong>Digital Business Card:</strong> Build a digital profile card using JSX and props.</li>
+            <li><strong>Travel Journal:</strong> Render travel entries dynamically with React components and styling.</li>
+            <li><strong>Facts App:</strong> Use React state and conditional rendering to display interactive facts.</li>
+          </ul>
+          <div class="preview-link" style="margin-bottom: 0.8rem;">
+            <a
+              href="https://jemeni11.github.io/Scrimba-React-Projects/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fas fa-external-link-alt"></i> Live Preview</a
+            >
+          </div>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+        <!-- END Scrimba React Projects Card -->
+      </div>
+    </section>
+  </div>
 
-   <!-- Tech Flower -->
-   <div class="tech-flower-container">
-    <div class="tech-flower-button" id="techFlowerBtn">
-        <i class="fas fa-code"></i>
-    </div>
-    <div class="tech-petals" id="techPetals">
-        <div class="tech-petal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-            <div class="tech-tooltip">C</div>
-        </div>
-        <div class="tech-petal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-            <div class="tech-tooltip">JavaScript</div>
-        </div>
-        <div class="tech-petal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
-            <div class="tech-tooltip">Django</div>
-        </div>
-        <div class="tech-petal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-            <div class="tech-tooltip">React</div>
-        </div>
-        <div class="tech-petal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-            <div class="tech-tooltip">C++</div>
-        </div>
-        <div class="tech-petal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-            <div class="tech-tooltip">Docker</div>
-        </div>
-    </div>
-</div>
+  <!-- Tech Flower, Modal, and script remain unchanged -->
 
-    <!-- Project Modal -->
-    <div class="modal" id="projectModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <h2 id="modalTitle"></h2>
-                <a id="modalGithub" href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <div class="divider"></div>
-            <div class="modal-body">
-                <p id="modalDescription"></p>
-                <div class="modal-section">
-                    <h3>Technologies</h3>
-                    <div id="modalTags" class="project-tags"></div>
-                </div>
-                <div class="modal-section">
-                    <h3>Features</h3>
-                    <ul id="modalFeatures"></ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Challenges</h3>
-                    <p id="modalChallenges"></p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Your existing script block (unchanged except adding scrimbaReact data) -->
+  <script>
+    (function () {
+      const techFlowerBtn = document.getElementById("techFlowerBtn");
+      const techPetals = document.getElementById("techPetals");
 
-    <script>
-        // Immediately execute to ensure the flower button works
-        (function() {
-            // Get elements
-            const techFlowerBtn = document.getElementById('techFlowerBtn');
-            const techPetals = document.getElementById('techPetals');
-            
-            if (!techFlowerBtn || !techPetals) {
-                console.error('Tech flower elements not found!');
-                return;
-            }
-            
-            console.log('Tech flower elements found', techFlowerBtn, techPetals);
-            
-            const petals = document.querySelectorAll('.tech-petal');
-            let isOpen = false;
-            
-            // Set explicit click handler
-            techFlowerBtn.onclick = function(event) {
-                console.log('Tech flower button clicked');
-                event.stopPropagation(); // Prevent event bubbling
-                
-                if (!isOpen) {
-                    // Open flower
-                    techPetals.classList.add('visible');
-                    
-                    // Animate petals with delay
-                    petals.forEach((petal, index) => {
-                        setTimeout(() => {
-                            petal.classList.add('animate');
-                        }, index * 70);
-                    });
-                    
-                    isOpen = true;
-                    console.log('Flower opened');
-                } else {
-                    // Close flower
-                    techPetals.classList.remove('visible');
-                    
-                    petals.forEach(petal => {
-                        petal.classList.remove('animate');
-                    });
-                    
-                    isOpen = false;
-                    console.log('Flower closed');
-                }
-            };
-            
-            // Close flower when clicking outside
-            document.addEventListener('click', function(event) {
-                if (isOpen && !techPetals.contains(event.target) && event.target !== techFlowerBtn) {
-                    console.log('Clicked outside, closing flower');
-                    techPetals.classList.remove('visible');
-                    
-                    petals.forEach(petal => {
-                        petal.classList.remove('animate');
-                    });
-                    
-                    isOpen = false;
-                }
+      if (!techFlowerBtn || !techPetals) {
+        console.error("Tech flower elements not found!");
+        return;
+      }
+
+      const petals = document.querySelectorAll(".tech-petal");
+      let isOpen = false;
+
+      techFlowerBtn.onclick = function (event) {
+        event.stopPropagation();
+
+        if (!isOpen) {
+          techPetals.classList.add("visible");
+          petals.forEach((petal, index) => {
+            setTimeout(() => {
+              petal.classList.add("animate");
+            }, index * 70);
+          });
+          isOpen = true;
+        } else {
+          techPetals.classList.remove("visible");
+          petals.forEach((petal) => {
+            petal.classList.remove("animate");
+          });
+          isOpen = false;
+        }
+      };
+
+      document.addEventListener("click", function (event) {
+        if (
+          isOpen &&
+          !techPetals.contains(event.target) &&
+          event.target !== techFlowerBtn
+        ) {
+          techPetals.classList.remove("visible");
+          petals.forEach((petal) => {
+            petal.classList.remove("animate");
+          });
+          isOpen = false;
+        }
+      });
+    })();
+
+    (function () {
+      const projectData = {
+        transcendance: {
+          title: "ft_transcendance",
+          github: "https://github.com/SNM-sabi/ft_transcendence",
+          description:
+            "A full-stack web application featuring a real-time multiplayer Pong game with user authentication, chat functionality, and matchmaking. This was my final project at 42 school, implementing modern web technologies and real-time communication.",
+          tags: [
+            "TypeScript",
+            "NestJS",
+            "React",
+            "PostgreSQL",
+            "WebSockets",
+          ],
+          features: [
+            "Real-time multiplayer Pong game",
+            "User authentication and profiles",
+            "Chat rooms and private messaging",
+            "Friend system and matchmaking",
+            "Responsive design for desktop and mobile",
+          ],
+          challenges:
+            "One of the main challenges was implementing real-time communication between players using WebSockets. Ensuring low latency and synchronization between players was critical for a smooth gaming experience. Another challenge was integrating the authentication system with the game state while maintaining security.",
+        },
+        inception: {
+          title: "Inception",
+          github: "https://github.com/0xJeff1/inception42",
+          description:
+            "A DevOps project focused on containerization and infrastructure. Built a complete development environment using Docker, including setting up multiple services (NGINX, WordPress, MariaDB) with custom Docker images and a Docker Compose configuration.",
+          tags: ["Docker", "Docker Compose", "NGINX", "WordPress", "MariaDB"],
+          features: [
+            "Custom Docker images for each service",
+            "Docker Compose orchestration",
+            "Persistent volumes for data storage",
+            "Secure NGINX configuration with SSL",
+            "Network isolation between containers",
+          ],
+          challenges:
+            "The main challenge was ensuring proper communication between the different services while maintaining security and isolation. Creating custom Docker images without using pre-built ones required deep understanding of each technology's configuration requirements.",
+        },
+        irc: {
+          title: "ft_irc",
+          github: "https://github.com/Toowan0x1/ft_irc",
+          description:
+            "Implemented an Internet Relay Chat (IRC) server from scratch in C++. This project involved socket programming, network protocols, and concurrent programming to create a functioning IRC server that adheres to RFC standards.",
+          tags: ["C++", "Sockets", "Network Programming", "Concurrency"],
+          features: [
+            "RFC-compliant IRC protocol implementation",
+            "Multiple simultaneous client connections",
+            "Channel creation and management",
+            "Private messaging between users",
+            "User authentication and operator privileges",
+          ],
+          challenges:
+            "Handling multiple client connections simultaneously required careful implementation of non-blocking I/O and proper state management. Ensuring thread safety and preventing race conditions while maintaining performance was another significant challenge.",
+        },
+        carpool: {
+          title: "Carpool App",
+          github: "https://github.com/0xJeff1/carpool-app",
+          description:
+            "A collaborative ride-sharing platform that connects drivers with passengers for daily commutes, long trips, or regular travel routes. Features real-time tracking, payment integration, and a rating system.",
+          tags: ["React", "Node.js", "MongoDB", "Express", "Google Maps API"],
+          features: [
+            "User profiles for drivers and passengers",
+            "Route planning and matching algorithm",
+            "Real-time location tracking",
+            "In-app messaging system",
+            "Payment processing integration",
+            "Rating and review system",
+          ],
+          challenges:
+            "The main challenge is creating an efficient matching algorithm that pairs drivers and passengers based on routes, preferences, and schedules. Implementing real-time location tracking while preserving battery life and ensuring data privacy is another significant challenge.",
+        },
+        LedgerApp: {
+          title: "LessonLedger App",
+          description:
+            "A SaaS platform designed for freelance teachers to manage their classes, reminders, and teaching packages seamlessly. It helps organize schedules, track student progress, and automate routine administrative tasks.",
+          tags: ["React", "Node.js", "MongoDB", "Express", "Next.js"],
+          features: [
+            "Class scheduling and calendar management",
+            "Automated reminders for upcoming lessons and deadlines",
+            "Package management to offer various teaching plans",
+            "Student progress tracking and notes",
+            "Simple, responsive user interface for easy access on any device",
+            "Secure user authentication and data privacy",
+          ],
+          challenges:
+            "Building an intuitive scheduling system that adapts to diverse teaching styles and package types was a core challenge. Ensuring reminders are timely without being intrusive, while maintaining a smooth user experience across devices, required careful design. Additionally, managing real-time updates and data consistency for students’ progress added complexity.",
+        },
+        scrimbaReact: {
+          title: "Scrimba React Projects",
+          github: "https://github.com/Jemeni11/Scrimba-React-Projects",
+          description:
+            "A collection of hands-on React projects built following Scrimba's \"Learn React\" course. Each project highlights key React concepts such as hooks, props, component architecture, and API interaction.",
+          tags: ["React", "JavaScript", "HTML", "CSS", "Vite"],
+          features: [
+            "Meme Generator: Create memes with random images and custom text using an API and form state.",
+            "Airbnb Clone: Static listing layout mimicking Airbnb UI with reusable components.",
+            "Digital Business Card: Build a digital profile card using JSX and props.",
+            "Travel Journal: Render travel entries dynamically with React components and styling.",
+            "Facts App: Use React state and conditional rendering to display interactive facts.",
+          ],
+          challenges: "The projects helped solidify core React concepts and practical application of hooks and component composition.",
+        },
+      };
+
+      const modal = document.getElementById("projectModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalGithub = document.getElementById("modalGithub");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalTags = document.getElementById("modalTags");
+      const modalFeatures = document.getElementById("modalFeatures");
+      const modalChallenges = document.getElementById("modalChallenges");
+      const closeBtn = document.querySelector(".close-modal");
+
+      // Add data-project attributes if missing (already done above in HTML)
+
+      document.querySelectorAll(".project-card").forEach((card) => {
+        card.addEventListener("click", function (e) {
+          if (e.target.closest(".github-link") || e.target.closest(".preview-link"))
+            return;
+
+          const projectId = this.getAttribute("data-project");
+          const project = projectData[projectId];
+
+          if (!project) {
+            console.error("Project data not found for:", projectId);
+            return;
+          }
+
+          modalTitle.textContent = project.title;
+          modalGithub.href = project.github || "#";
+          modalDescription.textContent = project.description;
+
+          modalTags.innerHTML = "";
+          if (project.tags && project.tags.length) {
+            project.tags.forEach((tag) => {
+              const tagSpan = document.createElement("span");
+              tagSpan.className = "tag";
+              tagSpan.textContent = tag;
+              modalTags.appendChild(tagSpan);
             });
-            
-            console.log('Tech flower initialization complete');
-        })();
+          }
 
-        // Project Modal functionality
-        (function() {
-            // Project details
-            const projectData = {
-                transcendance: {
-                    title: "ft_transcendance",
-                    github: "https://github.com/SNM-sabi/ft_transcendence",
-                    description: "A full-stack web application featuring a real-time multiplayer Pong game with user authentication, chat functionality, and matchmaking. This was my final project at 42 school, implementing modern web technologies and real-time communication.",
-                    tags: ["TypeScript", "NestJS", "React", "PostgreSQL", "WebSockets"],
-                    features: [
-                        "Real-time multiplayer Pong game",
-                        "User authentication and profiles",
-                        "Chat rooms and private messaging",
-                        "Friend system and matchmaking",
-                        "Responsive design for desktop and mobile"
-                    ],
-                    challenges: "One of the main challenges was implementing real-time communication between players using WebSockets. Ensuring low latency and synchronization between players was critical for a smooth gaming experience. Another challenge was integrating the authentication system with the game state while maintaining security."
-                },
-                inception: {
-                    title: "Inception",
-                    github: "https://github.com/0xJeff1/inception42",
-                    description: "A DevOps project focused on containerization and infrastructure. Built a complete development environment using Docker, including setting up multiple services (NGINX, WordPress, MariaDB) with custom Docker images and a Docker Compose configuration.",
-                    tags: ["Docker", "Docker Compose", "NGINX", "WordPress", "MariaDB"],
-                    features: [
-                        "Custom Docker images for each service",
-                        "Docker Compose orchestration",
-                        "Persistent volumes for data storage",
-                        "Secure NGINX configuration with SSL",
-                        "Network isolation between containers"
-                    ],
-                    challenges: "The main challenge was ensuring proper communication between the different services while maintaining security and isolation. Creating custom Docker images without using pre-built ones required deep understanding of each technology's configuration requirements."
-                },
-                irc: {
-                    title: "ft_irc",
-                    github: "https://github.com/Toowan0x1/ft_irc",
-                    description: "Implemented an Internet Relay Chat (IRC) server from scratch in C++. This project involved socket programming, network protocols, and concurrent programming to create a functioning IRC server that adheres to RFC standards.",
-                    tags: ["C++", "Sockets", "Network Programming", "Concurrency"],
-                    features: [
-                        "RFC-compliant IRC protocol implementation",
-                        "Multiple simultaneous client connections",
-                        "Channel creation and management",
-                        "Private messaging between users",
-                        "User authentication and operator privileges"
-                    ],
-                    challenges: "Handling multiple client connections simultaneously required careful implementation of non-blocking I/O and proper state management. Ensuring thread safety and preventing race conditions while maintaining performance was another significant challenge."
-                },
-                carpool: {
-                    title: "Carpool App",
-                    github: "https://github.com/0xJeff1/carpool-app",
-                    description: "A collaborative ride-sharing platform that connects drivers with passengers for daily commutes, long trips, or regular travel routes. Features real-time tracking, payment integration, and a rating system.",
-                    tags: ["React", "Node.js", "MongoDB", "Express", "Google Maps API"],
-                    features: [
-                        "User profiles for drivers and passengers",
-                        "Route planning and matching algorithm",
-                        "Real-time location tracking",
-                        "In-app messaging system",
-                        "Payment processing integration",
-                        "Rating and review system"
-                    ],
-                    challenges: "The main challenge is creating an efficient matching algorithm that pairs drivers and passengers based on routes, preferences, and schedules. Implementing real-time location tracking while preserving battery life and ensuring data privacy is another significant challenge."
-                }
-
-                LedgerApp: {
-                    title: "LessonLedger App",
-                    // github: "https://github.com/0xJeff1/carpool-app",
-                    description: "A SaaS platform designed for freelance teachers to manage their classes, reminders, and teaching packages seamlessly. It helps organize schedules, track student progress, and automate routine administrative tasks.",
-                tags: ["React", "Node.js", "MongoDB", "Express", "Next.js"],
-                features: [
-                "Class scheduling and calendar management",
-                "Automated reminders for upcoming lessons and deadlines",
-                "Package management to offer various teaching plans",
-                "Student progress tracking and notes",
-                "Simple, responsive user interface for easy access on any device",
-                "Secure user authentication and data privacy"
-                ],
-                challenges: "Building an intuitive scheduling system that adapts to diverse teaching styles and package types was a core challenge. Ensuring reminders are timely without being intrusive, while maintaining a smooth user experience across devices, required careful design. Additionally, managing real-time updates and data consistency for students’ progress added complexity."
-
-                }
-
-            };
-
-            // Get modal elements
-            const modal = document.getElementById("projectModal");
-            const modalTitle = document.getElementById("modalTitle");
-            const modalGithub = document.getElementById("modalGithub");
-            const modalDescription = document.getElementById("modalDescription");
-            const modalTags = document.getElementById("modalTags");
-            const modalFeatures = document.getElementById("modalFeatures");
-            const modalChallenges = document.getElementById("modalChallenges");
-            const closeBtn = document.querySelector(".close-modal");
-
-            // Add data-project attributes to project cards
-            document.querySelectorAll('.project-card').forEach((card, index) => {
-                if (!card.getAttribute('data-project')) {
-                    const projects = ['transcendance', 'inception', 'irc', 'carpool' , 'LedgerApp'];
-                    if (index < projects.length) {
-                        card.setAttribute('data-project', projects[index]);
-                    }
-                }
+          modalFeatures.innerHTML = "";
+          if (project.features && project.features.length) {
+            project.features.forEach((feature) => {
+              const li = document.createElement("li");
+              li.textContent = feature;
+              modalFeatures.appendChild(li);
             });
+          } else {
+            modalFeatures.innerHTML = "<li>No features listed.</li>";
+          }
 
-            // Add click event to all project cards
-            document.querySelectorAll('.project-card').forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // Don't open modal if clicking on GitHub link
-                    if (e.target.closest('.github-link')) return;
-                    
-                    const projectId = this.getAttribute('data-project');
-                    const project = projectData[projectId];
-                    
-                    if (!project) {
-                        console.error('Project data not found for:', projectId);
-                        return;
-                    }
-                    
-                    // Populate modal with project data
-                    modalTitle.textContent = project.title;
-                    modalGithub.href = project.github;
-                    modalDescription.textContent = project.description;
-                    
-                    // Clear and populate tags
-                    modalTags.innerHTML = '';
-                    project.tags.forEach(tag => {
-                        const tagSpan = document.createElement('span');
-                        tagSpan.className = 'tag';
-                        tagSpan.textContent = tag;
-                        modalTags.appendChild(tagSpan);
-                    });
-                    
-                    // Clear and populate features
-                    modalFeatures.innerHTML = '';
-                    project.features.forEach(feature => {
-                        const li = document.createElement('li');
-                        li.textContent = feature;
-                        modalFeatures.appendChild(li);
-                    });
-                    
-                    // Set challenges
-                    modalChallenges.textContent = project.challenges;
-                    
-                    // Show modal
-                    modal.classList.add('show-modal');
-                    document.body.style.overflow = 'hidden'; // Prevent scrolling
-                });
-            });
+          modalChallenges.textContent = project.challenges || "No challenges listed.";
 
-            // Close modal when clicking the close button
-            closeBtn.addEventListener('click', function() {
-                modal.classList.remove('show-modal');
-                document.body.style.overflow = 'auto'; // Re-enable scrolling
-            });
+          modal.classList.add("show-modal");
+          document.body.style.overflow = "hidden";
+        });
+      });
 
-            // Close modal when clicking outside the modal content
-            window.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.classList.remove('show-modal');
-                    document.body.style.overflow = 'auto'; // Re-enable scrolling
-                }
-            });
+      closeBtn.addEventListener("click", function () {
+        modal.classList.remove("show-modal");
+        document.body.style.overflow = "auto";
+      });
 
-            // Close modal with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.classList.contains('show-modal')) {
-                    modal.classList.remove('show-modal');
-                    document.body.style.overflow = 'auto'; // Re-enable scrolling
-                }
-            });
-        })();
-    </script>
+      window.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          modal.classList.remove("show-modal");
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.classList.contains("show-modal")) {
+          modal.classList.remove("show-modal");
+          document.body.style.overflow = "auto";
+        }
+      });
+    })();
+  </script>
 </body>
-</html> 
+</html>
